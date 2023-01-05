@@ -153,6 +153,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-5px);
+}
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-gray-2);
+  pointer-events: none;
 }
 
 /* Header Content */
