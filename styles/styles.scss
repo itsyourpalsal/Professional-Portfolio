@@ -1,3 +1,6 @@
+// reset browser defaults
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@
 
 :root {
     --color-primary: #191d2b;
-    --color-secondary: #27AE60;
+    --color-secondary: #1348ab;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-gray0: #f8f8f8; 
@@ -19,6 +22,20 @@
     --color-gray-6: #12181b;
     --br-sm-2: 14px;
     --bod-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+}
+
+.light-mode{
+    --color-primary: #FFFFFF;
+    --color-secondary: #f56692;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-gray0: #f8f8f8; 
+    --color-gray-1: #dbe1e8;
+    --color-gray-2: #b2becd;
+    --color-gray-3: #6c7983;
+    --color-gray-4: #454e56;
+    --color-gray-5: #2a2e35;
+    --color-gray-6: #12181b;
 }
 
 body {
@@ -37,7 +54,7 @@ a {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -163,7 +180,7 @@ section {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    min-height: 100vh;
     .left-header {
         display: flex;
         align-items: center;
@@ -410,7 +427,7 @@ section {
 
 // Portfolios
 .port-text{
-    padding: 2rem;
+    padding: 5rem;
     text-align: center;
 }
 
@@ -418,7 +435,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     .portfolio-item{
         position: relative;
         img{
@@ -655,3 +672,6 @@ section {
         }
     }
 }
+
+
+@import './media';
