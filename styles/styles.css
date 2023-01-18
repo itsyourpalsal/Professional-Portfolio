@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #1348ab;
+  --color-secondary: #2a5fc2;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-gray0: #f8f8f8;
@@ -54,6 +54,7 @@ header {
   min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
+  padding: 0 !important;
 }
 
 section {
@@ -663,7 +664,7 @@ section {
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 6.3rem;
+  font-size: 7.9rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -763,6 +764,15 @@ section {
     margin-left: 0 !important;
     margin-top: 1.5rem;
   }
+  .main-title h2 {
+    font-size: 5rem;
+  }
+  .main-title h2 span {
+    font-size: 5rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 6.5rem;
+  }
 }
 @media screen and (max-width: 1250px) {
   .portfolios {
@@ -837,6 +847,15 @@ section {
   }
   .controls .control {
     margin: 0.6rem 1rem !important;
+  }
+  .main-title h2 {
+    font-size: 4rem;
+  }
+  .main-title h2 span {
+    font-size: 4rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 5rem;
   }
 }
 @media screen and (max-width: 700px) {

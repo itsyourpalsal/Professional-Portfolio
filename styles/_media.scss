@@ -113,6 +113,17 @@
         margin-left: 0 !important;
         margin-top: 1.5rem;
     }
+    .main-title{
+        h2{
+            font-size: 5rem;
+            span{
+                font-size: 5rem;
+            }
+            .bg-text{
+                font-size: 6.5rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -200,6 +211,17 @@
         background-color: var(--color-gray-5);
         .control{
             margin: .6rem 1rem !important;
+        }
+    }
+    .main-title{
+        h2{
+            font-size: 4rem;
+            span{
+                font-size: 4rem;
+            }
+            .bg-text{
+                font-size: 5rem;
+            }
         }
     }
 }
